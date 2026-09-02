@@ -7,7 +7,7 @@
   "variable": [
     {
       "key": "baseUrl",
-      "value": "http://localhost:8000"
+      "value": "http://localhost:8001"
     }
   ],
   "item": [
@@ -34,7 +34,7 @@
             "header": [{"key": "Content-Type", "value": "application/json"}],
             "body": {
               "mode": "raw",
-              "raw": "{\"name\":\"Test User\",\"username\":\"testuser\",\"email\":\"test@example.com\",\"password\":\"password123\",\"confirm_password\":\"password123\"}"
+              "raw": "{\"name\":\"Test User\",\"username\":\"testuser\",\"email\":\"testuser@example.com\",\"password\":\"replace-with-strong-password\",\"confirm_password\":\"replace-with-strong-password\"}"
             }
           }
         },
@@ -46,7 +46,7 @@
             "header": [{"key": "Content-Type", "value": "application/json"}],
             "body": {
               "mode": "raw",
-              "raw": "{\"identifier\":\"test@example.com\",\"password\":\"password123\"}"
+              "raw": "{\"identifier\":\"testuser@example.com\",\"password\":\"replace-with-strong-password\"}"
             }
           }
         },

@@ -158,7 +158,7 @@
     "terms": "ಸೇವಾ ನಿಯಮಗಳು",
     "newsletter": {
       "title": "ಉತ್ಪನ್ನ ನವೀಕರಣಗಳನ್ನು ಪಡೆಯಿರಿ",
-      "placeholder": "you@company.com",
+      "placeholder": "you@example.com",
       "button": "ಚಂದಾದಾರರಾಗಿ"
     },
     "status": {
@@ -172,7 +172,7 @@
     },
     "newsletter": {
       "title": "ಉತ್ಪನ್ನ ನವೀಕರಣಗಳನ್ನು ಪಡೆಯಿರಿ",
-      "placeholder": "you@company.com",
+      "placeholder": "you@example.com",
       "button": "ಚಂದಾದಾರರಾಗಿ"
     },
     "status": {

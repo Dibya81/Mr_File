@@ -116,7 +116,7 @@ export default function AdminLoginPage() {
                 autoComplete="username"
                 autoFocus
                 className="w-full px-3.5 py-2.5 text-sm rounded-lg border border-white/10 bg-white/[0.04] text-white placeholder-slate-500 focus:outline-none focus:ring-2 focus:ring-blue-500/40 focus:border-blue-500/40"
-                placeholder="admin@documentvault.app"
+                placeholder="admin@example.com"
                 required
               />
             </div>

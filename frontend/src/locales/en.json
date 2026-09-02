@@ -20,8 +20,8 @@
     "afterLabel": "After"
   },
   "trust": {
-    "title": "Trusted by 10,000+ teams worldwide",
-    "subtitle": "Enterprise-grade security used by",
+    "title": "Built for teams that take security seriously",
+    "subtitle": "Designed for professionals across",
     "compliance": {
       "soc": "SOC-2 Type II",
       "encryption": "256-bit AES Encryption",
@@ -165,7 +165,7 @@
     "terms": "Terms of Service",
     "newsletter": {
       "title": "Get product updates",
-      "placeholder": "you@company.com",
+      "placeholder": "you@example.com",
       "button": "Subscribe"
     },
     "status": {

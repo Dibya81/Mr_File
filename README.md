@@ -129,7 +129,7 @@ Browser → Frontend (React SPA) → Backend (FastAPI) → PostgreSQL + Supabase
 ## Installation
 
 ```bash
-git clone <repo-url> documentvault
+git clone https://github.com/Dibya81/Mr_File.git documentvault
 cd documentvault
 
 # Backend
@@ -183,7 +183,7 @@ The repository includes one SQL migration at `backend/migrations/001_public_comm
 Open the SQL Editor in your Supabase dashboard and run that file. Or via psql:
 ```bash
 cd backend
-PGPASSWORD='your-password' psql "your-supabase-connection-string" -f migrations/001_public_community.sql
+PGPASSWORD='YOUR_PASSWORD' psql "$DATABASE_URL" -f migrations/001_public_community.sql
 ```
 
 If you cannot reach the pooler via psql, the project also includes `run_migration.py`:
@@ -284,7 +284,7 @@ User B retains the original; User A owns the copy outright.
 
 To make a user an admin, run in the Supabase SQL editor:
 ```sql
-UPDATE users SET role = 'admin' WHERE username = 'your-username';
+UPDATE users SET role = 'admin' WHERE username = 'YOUR_USERNAME';
 ```
 
 ## Security

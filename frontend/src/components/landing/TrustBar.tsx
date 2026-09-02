@@ -3,12 +3,12 @@ import { ShieldCheck, Lock, Globe } from 'lucide-react';
 import AnimatedSection from './AnimatedSection';
 
 const companies = [
-  'Acme Corp',
-  'Globex',
-  'Initech',
-  'Massive Dynamic',
-  'Hooli',
-  'Vandelay',
+  'Legal',
+  'Finance',
+  'Healthcare',
+  'Education',
+  'Consulting',
+  'Engineering',
 ];
 
 export default function TrustBar() {
