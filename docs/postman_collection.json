@@ -1,0 +1,293 @@
+{
+  "info": {
+    "name": "DocumentVault API",
+    "description": "Complete API collection for DocumentVault",
+    "schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+  },
+  "variable": [
+    {
+      "key": "baseUrl",
+      "value": "http://localhost:8000"
+    }
+  ],
+  "item": [
+    {
+      "name": "Health",
+      "item": [
+        {
+          "name": "Health Check",
+          "request": {
+            "method": "GET",
+            "url": "{{baseUrl}}/health"
+          }
+        }
+      ]
+    },
+    {
+      "name": "Auth",
+      "item": [
+        {
+          "name": "Signup",
+          "request": {
+            "method": "POST",
+            "url": "{{baseUrl}}/api/auth/signup",
+            "header": [{"key": "Content-Type", "value": "application/json"}],
+            "body": {
+              "mode": "raw",
+              "raw": "{\"name\":\"Test User\",\"username\":\"testuser\",\"email\":\"test@example.com\",\"password\":\"password123\",\"confirm_password\":\"password123\"}"
+            }
+          }
+        },
+        {
+          "name": "Login",
+          "request": {
+            "method": "POST",
+            "url": "{{baseUrl}}/api/auth/login",
+            "header": [{"key": "Content-Type", "value": "application/json"}],
+            "body": {
+              "mode": "raw",
+              "raw": "{\"identifier\":\"test@example.com\",\"password\":\"password123\"}"
+            }
+          }
+        },
+        {
+          "name": "Logout",
+          "request": {
+            "method": "POST",
+            "url": "{{baseUrl}}/api/auth/logout"
+          }
+        },
+        {
+          "name": "Get Me",
+          "request": {
+            "method": "GET",
+            "url": "{{baseUrl}}/api/auth/me"
+          }
+        },
+        {
+          "name": "Check Username",
+          "request": {
+            "method": "GET",
+            "url": "{{baseUrl}}/api/users/check-username?username=testuser123"
+          }
+        }
+      ]
+    },
+    {
+      "name": "Documents",
+      "item": [
+        {
+          "name": "Upload Document",
+          "request": {
+            "method": "POST",
+            "url": "{{baseUrl}}/api/documents/upload",
+            "body": {
+              "mode": "formdata",
+              "formdata": [
+                {"key": "file", "type": "file", "src": "/path/to/your/file.pdf"}
+              ]
+            }
+          }
+        },
+        {
+          "name": "List Documents",
+          "request": {
+            "method": "GET",
+            "url": {
+              "raw": "{{baseUrl}}/api/documents?page=1&per_page=20",
+              "host": ["{{baseUrl}}"],
+              "path": ["api", "documents"],
+              "query": [
+                {"key": "page", "value": "1"},
+                {"key": "per_page", "value": "20"}
+              ]
+            }
+          }
+        },
+        {
+          "name": "Get Document",
+          "request": {
+            "method": "GET",
+            "url": "{{baseUrl}}/api/documents/{{documentId}}"
+          }
+        },
+        {
+          "name": "Update Document",
+          "request": {
+            "method": "PATCH",
+            "url": "{{baseUrl}}/api/documents/{{documentId}}",
+            "header": [{"key": "Content-Type", "value": "application/json"}],
+            "body": {
+              "mode": "raw",
+              "raw": "{\"original_filename\":\"renamed_file.pdf\"}"
+            }
+          }
+        },
+        {
+          "name": "Delete Document",
+          "request": {
+            "method": "DELETE",
+            "url": "{{baseUrl}}/api/documents/{{documentId}}"
+          }
+        },
+        {
+          "name": "Download Document",
+          "request": {
+            "method": "GET",
+            "url": "{{baseUrl}}/api/documents/{{documentId}}/download"
+          }
+        },
+        {
+          "name": "Lock Document",
+          "request": {
+            "method": "POST",
+            "url": "{{baseUrl}}/api/documents/{{documentId}}/lock",
+            "header": [{"key": "Content-Type", "value": "application/json"}],
+            "body": {
+              "mode": "raw",
+              "raw": "{\"password\":\"file-password-123\"}"
+            }
+          }
+        },
+        {
+          "name": "Unlock Document",
+          "request": {
+            "method": "POST",
+            "url": "{{baseUrl}}/api/documents/{{documentId}}/unlock",
+            "header": [{"key": "Content-Type", "value": "application/json"}],
+            "body": {
+              "mode": "raw",
+              "raw": "{\"password\":\"file-password-123\"}"
+            }
+          }
+        }
+      ]
+    },
+    {
+      "name": "Folders",
+      "item": [
+        {
+          "name": "Create Folder",
+          "request": {
+            "method": "POST",
+            "url": "{{baseUrl}}/api/folders",
+            "header": [{"key": "Content-Type", "value": "application/json"}],
+            "body": {
+              "mode": "raw",
+              "raw": "{\"name\":\"My Folder\"}"
+            }
+          }
+        },
+        {
+          "name": "List Folders",
+          "request": {
+            "method": "GET",
+            "url": "{{baseUrl}}/api/folders"
+          }
+        },
+        {
+          "name": "Rename Folder",
+          "request": {
+            "method": "PATCH",
+            "url": "{{baseUrl}}/api/folders/{{folderId}}",
+            "header": [{"key": "Content-Type", "value": "application/json"}],
+            "body": {
+              "mode": "raw",
+              "raw": "{\"name\":\"Renamed Folder\"}"
+            }
+          }
+        },
+        {
+          "name": "Delete Folder",
+          "request": {
+            "method": "DELETE",
+            "url": "{{baseUrl}}/api/folders/{{folderId}}"
+          }
+        }
+      ]
+    },
+    {
+      "name": "Sharing",
+      "item": [
+        {
+          "name": "Share Document",
+          "request": {
+            "method": "POST",
+            "url": "{{baseUrl}}/api/documents/{{documentId}}/shares",
+            "header": [{"key": "Content-Type", "value": "application/json"}],
+            "body": {
+              "mode": "raw",
+              "raw": "{\"username\":\"otheruser\",\"permission\":\"view\"}"
+            }
+          }
+        },
+        {
+          "name": "Get Document Shares",
+          "request": {
+            "method": "GET",
+            "url": "{{baseUrl}}/api/documents/{{documentId}}/shares"
+          }
+        },
+        {
+          "name": "Shared With Me",
+          "request": {
+            "method": "GET",
+            "url": "{{baseUrl}}/api/shared-with-me?page=1&per_page=20"
+          }
+        },
+        {
+          "name": "Revoke Share",
+          "request": {
+            "method": "DELETE",
+            "url": "{{baseUrl}}/api/documents/{{documentId}}/shares/{{shareId}}"
+          }
+        }
+      ]
+    },
+    {
+      "name": "Processing",
+      "item": [
+        {
+          "name": "Processing History",
+          "request": {
+            "method": "GET",
+            "url": "{{baseUrl}}/api/documents/history?page=1&per_page=20"
+          }
+        }
+      ]
+    },
+    {
+      "name": "Admin",
+      "item": [
+        {
+          "name": "Get Stats",
+          "request": {
+            "method": "GET",
+            "url": "{{baseUrl}}/api/admin/stats"
+          }
+        },
+        {
+          "name": "List Users",
+          "request": {
+            "method": "GET",
+            "url": "{{baseUrl}}/api/admin/users?page=1&per_page=20"
+          }
+        },
+        {
+          "name": "List All Documents",
+          "request": {
+            "method": "GET",
+            "url": "{{baseUrl}}/api/admin/documents?page=1&per_page=20"
+          }
+        },
+        {
+          "name": "List Processing Jobs",
+          "request": {
+            "method": "GET",
+            "url": "{{baseUrl}}/api/admin/processing?page=1&per_page=20"
+          }
+        }
+      ]
+    }
+  ]
+}

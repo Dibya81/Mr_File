@@ -1,0 +1,152 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  font-family: Inter, system-ui, Avenir, Helvetica, Arial, sans-serif;
+  line-height: 1.5;
+  font-weight: 400;
+  font-feature-settings: "cv11", "ss01", "ss03";
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  margin: 0;
+  min-height: 100vh;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+/* Light theme */
+html.light {
+  color-scheme: light;
+  background: #FAFAFB;
+}
+
+/* Bright theme (dark) */
+html.bright, html.dark {
+  color-scheme: dark;
+  background: #090D16;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  *, *::before, *::after {
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.01ms !important;
+    scroll-behavior: auto !important;
+  }
+}
+
+@layer utilities {
+  .scrollbar-thin {
+    scrollbar-width: thin;
+  }
+
+  .skeleton-shimmer {
+    background: linear-gradient(
+      90deg,
+      transparent 0%,
+      rgba(148, 163, 184, 0.18) 40%,
+      rgba(148, 163, 184, 0.32) 50%,
+      rgba(148, 163, 184, 0.18) 60%,
+      transparent 100%
+    );
+    background-size: 200% 100%;
+    animation: shimmer 1.6s linear infinite;
+  }
+
+  /* Glassmorphism cards */
+  .glass {
+    @apply bg-white/[0.03] backdrop-blur-xl border border-white/10;
+  }
+  .glass-light {
+    @apply bg-white/80 backdrop-blur-xl border border-black/[0.06];
+  }
+
+  /* Gradient text — used on hero headline (responds to theme) */
+  .gradient-text {
+    background: linear-gradient(to right, var(--gradient-from, #ffffff) 0%, var(--gradient-via, #e2e8f0) 50%, var(--gradient-to, #94a3b8) 100%);
+    -webkit-background-clip: text;
+    background-clip: text;
+    color: transparent;
+  }
+  html.light .gradient-text {
+    --gradient-from: #0f172a;
+    --gradient-via: #334155;
+    --gradient-to: #64748b;
+  }
+  .gradient-text-light {
+    background: linear-gradient(to right, #0f172a 0%, #334155 50%, #64748b 100%);
+    -webkit-background-clip: text;
+    background-clip: text;
+    color: transparent;
+  }
+
+  /* Grid background pattern */
+  .grid-bg {
+    background-image:
+      linear-gradient(rgba(59,130,246,0.04) 1px, transparent 1px),
+      linear-gradient(90deg, rgba(59,130,246,0.04) 1px, transparent 1px);
+    background-size: 40px 40px;
+  }
+  .grid-bg-light {
+    background-image:
+      linear-gradient(rgba(0,0,0,0.04) 1px, transparent 1px),
+      linear-gradient(90deg, rgba(0,0,0,0.04) 1px, transparent 1px);
+    background-size: 40px 40px;
+  }
+
+  /* Bento card spotlight (cursor-following) */
+  .bento-spotlight {
+    position: relative;
+    overflow: hidden;
+    isolation: isolate;
+  }
+  .bento-spotlight::before {
+    content: '';
+    position: absolute;
+    inset: 0;
+    background: radial-gradient(
+      400px circle at var(--mx, 50%) var(--my, 50%),
+      rgba(59, 130, 246, 0.12),
+      transparent 40%
+    );
+    opacity: 0;
+    transition: opacity 0.4s;
+    z-index: 0;
+    pointer-events: none;
+  }
+  .bento-spotlight:hover::before {
+    opacity: 1;
+  }
+  .bento-spotlight > * {
+    position: relative;
+    z-index: 1;
+  }
+}
+
+@keyframes shimmer {
+  0% { background-position: 200% 0; }
+  100% { background-position: -200% 0; }
+}
+
+/* Shine sweep used on CTA glow button */
+@keyframes shine-sweep {
+  0% { background-position: 200% 0; }
+  100% { background-position: -200% 0; }
+}
+
+.shine-button {
+  background-size: 200% 100%;
+  background-image: linear-gradient(
+    110deg,
+    rgba(255,255,255,0) 35%,
+    rgba(255,255,255,0.18) 50%,
+    rgba(255,255,255,0) 65%
+  );
+  animation: shine-sweep 3.5s linear infinite;
+}

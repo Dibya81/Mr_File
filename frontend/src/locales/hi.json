@@ -1,0 +1,469 @@
+{
+  "nav": {
+    "product": "उत्पाद",
+    "howItWorks": "यह कैसे काम करता है",
+    "security": "सुरक्षा",
+    "login": "लॉगिन",
+    "getStarted": "शुरू करें"
+  },
+  "hero": {
+    "title1": "आपके दस्तावेज़।",
+    "title2": "नियंत्रण में।",
+    "subtitle": "अपनी फ़ाइलों को स्टोर करें, समझें, व्यवस्थित करें, सुरक्षित करें और शेयर करें। प्लेटफ़ॉर्म खुद समझ जाता है कि आप क्या अपलोड कर रहे हैं।",
+    "cta": "शुरू करें",
+    "secondary": "देखें यह कैसे काम करता है"
+  },
+  "problem": {
+    "title": "फ़ाइलें इतनी तेज़ी से बढ़ती हैं कि उन्हें व्यवस्थित करना मुश्किल हो जाता है।",
+    "subtitle": "डाउनलोड, एक्सपोर्ट, ड्राफ्ट, शेयर की गई फ़ाइलें। Document_v3_final_FINAL.pdf जैसे नाम। कोई नहीं जानता कि अंदर क्या है।",
+    "beforeLabel": "पहले",
+    "afterLabel": "बाद में"
+  },
+  "trust": {
+    "title": "10,000+ टीमों का भरोसा",
+    "subtitle": "एंटरप्राइज़-ग्रेड सुरक्षा का उपयोग करते हैं",
+    "compliance": {
+      "soc": "SOC-2 Type II",
+      "encryption": "256-bit AES एन्क्रिप्शन",
+      "gdpr": "GDPR अनुपालित"
+    }
+  },
+  "accessControl": {
+    "title": "Share access",
+    "publicLink": "Public link",
+    "publicLinkHint": "Anyone with the link can view",
+    "private": "Private",
+    "privateHint": "Only shared with specific users",
+    "shareWith": "Share with",
+    "permission": {
+      "label": "Permission level",
+      "view": "View only",
+      "viewHint": "Can read but not download",
+      "viewDownload": "View + Download",
+      "viewDownloadHint": "Can read and save a copy",
+      "viewDownloadPrint": "View + Download + Print",
+      "viewDownloadPrintHint": "Full access including printing"
+    },
+    "expires": "Expires",
+    "maxDownloads": "Max downloads",
+    "passcode": "Passcode (optional)",
+    "passcodePlaceholder": "Set a passcode",
+    "send": "Send invitation",
+    "copyLink": "Copy link",
+    "revoke": "Revoke"
+  },
+  "idea": {
+    "title": "क्या हो अगर आपका दस्तावेज़ प्रबंधक खुद फ़ाइलों को समझे?",
+    "subtitle": "अब और अनुमान नहीं। प्लेटफ़ॉर्म हर फ़ाइल के अंदर देखता है और पता लगाता है कि वास्तव में क्या है।"
+  },
+  "detection": {
+    "title": "यह फ़ाइल नाम से परे देखता है।",
+    "subtitle": "report.pdf नाम की फ़ाइल असल में PDF नहीं भी हो सकती। हम वास्तविक सामग्री जांचते हैं — सिर्फ एक्सटेंशन नहीं।",
+    "step1": "फ़ाइल अपलोड",
+    "step2": "सामग्री जांच",
+    "step3": "वास्तविक प्रकार पहचाना"
+  },
+  "processing": {
+    "title": "अपलोड। पहचानें। निकालें। वर्गीकृत करें।",
+    "subtitle": "हर दस्तावेज़ एक प्रोसेसिंग पाइपलाइन से गुज़रता है जो उसे अंदर से समझता है।",
+    "upload": "अपलोड",
+    "detect": "पहचानें",
+    "extract": "निकालें",
+    "classify": "वर्गीकृत",
+    "store": "स्टोर",
+    "tabs": {
+      "upload": "अपलोड",
+      "detect": "पहचानें",
+      "extract": "निकालें",
+      "classify": "वर्गीकृत"
+    },
+    "uploadStep": {
+      "title": "अपलोड करने के लिए फ़ाइलें यहाँ छोड़ें",
+      "hint": "PDF, DOCX, XLSX, चित्र और बहुत कुछ"
+    },
+    "detectStep": {
+      "inspecting": "सामग्री की जाँच हो रही है…",
+      "magicBytes": "मैजिक बाइट्स विश्लेषण",
+      "confirmed": "पुष्टि: PDF"
+    },
+    "extractStep": {
+      "fieldsFound": "फ़ील्ड मिले"
+    },
+    "classifyStep": {
+      "autoClassified": "स्वतः वर्गीकृत",
+      "suggestedFolder": "सुझाई गई फ़ोल्डर"
+    }
+  },
+  "extraction": {
+    "title": "फ़ाइल हमें बताती है कि वह क्या है।",
+    "subtitle": "हम महत्वपूर्ण जानकारी निकालते हैं — बिना आपको मैन्युअली दर्ज कराए।",
+    "pages": "पृष्ठ",
+    "author": "लेखक",
+    "created": "बनाया",
+    "words": "शब्द",
+    "category": "श्रेणी",
+    "status": "स्थिति"
+  },
+  "organization": {
+    "title": "फ़ाइलों से एक वर्कस्पेस तक।",
+    "subtitle": "आपके दस्तावेज़ अब ढेर नहीं रहे — एक व्यवस्थित वर्कस्पेस बन जाते हैं। फ़ोल्डर, श्रेणियां, खोज — सब अपनी जगह पर।",
+    "folders": "फ़ोल्डर",
+    "categories": "श्रेणियां",
+    "search": "खोज",
+    "sort": "क्रम",
+    "bento": {
+      "folders": { "title": "Nested Folders", "body": "Organize documents in a 3-level hierarchy. Drag and drop to move." },
+      "search": { "title": "AI Search", "body": "Full-text search across all your documents instantly." },
+      "tags": { "title": "Auto-Tagging", "body": "Documents are auto-classified with smart tags." },
+      "sort": { "title": "Smart Sort", "body": "Sort by any extracted field with one click." },
+      "counter": { "title": "Processed Today", "body": "Real-time counter of files AI has processed." }
+    }
+  },
+  "security": {
+    "title": "निजी फ़ाइलों को निजी रखें।",
+    "subtitle": "अलग-अलग फ़ाइलों को पासवर्ड से लॉक करें। सुरक्षा सर्वर पर लागू होती है — सिर्फ इंटरफ़ेस पर नहीं।",
+    "lock": "लॉक",
+    "protect": "सुरक्षित",
+    "enforce": "सर्वर-साइड प्रवर्तन"
+  },
+  "sharing": {
+    "title": "नियंत्रण खोए बिना शेयर करें।",
+    "subtitle": "यूज़रनेम से किसी को फ़ाइल भेजें। चुनें कि वे क्या कर सकते हैं — देखें या डाउनलोड। कभी भी एक्सेस वापस लें।",
+    "shareWith": "शेयर करें",
+    "permission": "अनुमति",
+    "revoke": "एक्सेस वापस लें"
+  },
+  "product": {
+    "title": "सब कुछ एक जगह।",
+    "subtitle": "आपका डैशबोर्ड। आपकी फ़ाइलें। आपके नियम।"
+  },
+  "cta": {
+    "title": "आपके दस्तावेज़ों की एक जगह है।",
+    "subtitle": "अपनी बनाएं।",
+    "button": "अपना वर्कस्पेस बनाएं",
+    "secondary": "और जानें",
+    "status": "सभी सिस्टम चालू",
+    "ready": "30 सेकंड में तैयार",
+    "subscribed": "आप सब्सक्राइब कर चुके हैं!"
+  },
+  "footer": {
+    "description": "दस्तावेज़ स्टोर करने, व्यवस्थित करने, प्रोसेस करने और शेयर करने के लिए एक सुरक्षित वर्कस्पेस।",
+    "product": "उत्पाद",
+    "resources": "संसाधन",
+    "legal": "कानूनी",
+    "company": "कंपनी",
+    "documentation": "दस्तावेज़ीकरण",
+    "apiReference": "API संदर्भ",
+    "privacy": "गोपनीयता नीति",
+    "terms": "सेवा की शर्तें",
+    "newsletter": {
+      "title": "उत्पाद अपडेट प्राप्त करें",
+      "placeholder": "you@company.com",
+      "button": "सब्सक्राइब"
+    },
+    "status": {
+      "operational": "सभी सिस्टम चालू"
+    },
+    "column": {
+      "product": { "title": "उत्पाद", "items": ["Features", "Security", "Pricing", "Changelog"] },
+      "resources": { "title": "संसाधन", "items": ["Documentation", "API Reference", "Status"] },
+      "company": { "title": "कंपनी", "items": ["About", "Blog", "Careers", "Contact"] },
+      "legal": { "title": "कानूनी", "items": ["Privacy Policy", "Terms of Service", "Cookie Policy"] }
+    }
+  },
+  "themes": {
+    "light": "लाइट",
+    "bright": "ब्राइट",
+    "system": "सिस्टम"
+  },
+  "languages": {
+    "en": "English",
+    "hi": "हिन्दी",
+    "kn": "ಕನ್ನಡ"
+  },
+  "workspace": {
+    "nav": {
+      "dashboard": "डैशबोर्ड",
+      "recent": "हाल का",
+      "shared": "शेयर किया गया",
+      "starred": "स्टार किया गया",
+      "allFiles": "सभी फ़ाइलें",
+      "settings": "सेटिंग्स",
+      "admin": "व्यवस्थापक",
+      "community": "समुदाय"
+    },
+    "dashboard": {
+      "greeting": "शुभ {{timeOfDay}}",
+      "subtitle": "आपके वर्कस्पेस पर क्या है यहाँ देखें।",
+      "quickActions": "त्वरित क्रियाएँ",
+      "uploadFiles": "फ़ाइलें अपलोड करें",
+      "newFolder": "नया फ़ोल्डर",
+      "recentFiles": "हाल की फ़ाइलें",
+      "storage": "उपयोग किया गया स्टोरेज",
+      "viewAll": "सभी देखें",
+      "emptyTitle": "आपका वर्कस्पेस खाली है",
+      "emptySubtitle": "शुरू करने के लिए अपनी पहली फ़ाइल अपलोड करें।",
+      "noRecent": "कोई हाल की फ़ाइल नहीं",
+      "noStarred": "कोई स्टार की गई फ़ाइल नहीं",
+      "processingCount": "{{count}} प्रोसेसिंग",
+      "readyTitle": "आपका वर्कस्पेस तैयार है",
+      "dropZoneTitle": "फ़ाइलें यहाँ खींचें और छोड़ें",
+      "dropZoneActive": "अपलोड करने के लिए छोड़ें",
+      "dropZoneHint": "या ब्राउज़ करने के लिए क्लिक करें · PDF, DOCX, XLSX, PNG, JPG 50MB तक",
+      "browseFiles": "फ़ाइलें ब्राउज़ करें",
+      "createFolderHint": "या व्यवस्थित करने के लिए फ़ोल्डर बनाएँ",
+      "files_one": "{{count}} फ़ाइल",
+      "files_other": "{{count}} फ़ाइलें",
+      "recentSubtitle": "आपके द्वारा हाल ही में अपलोड या संशोधित की गई फ़ाइलें, सबसे हाल के अनुसार क्रमबद्ध।",
+      "starredSubtitle": "आपके द्वारा महत्वपूर्ण के रूप में चिह्नित फ़ाइलें। किसी भी फ़ाइल पर स्टार पर क्लिक करके जोड़ें या हटाएँ।",
+      "stat_totalFiles": "कुल फ़ाइलें",
+      "stat_storage": "उपयोग किया गया स्टोरेज",
+      "stat_aiProcessed": "AI द्वारा संसाधित",
+      "stat_starred": "स्टार की गईं",
+      "allFiles": "सभी फ़ाइलें"
+    },
+    "folder": {
+      "allFiles": "सभी फ़ाइलें",
+      "root": "होम",
+      "newFolderName": "नया फ़ोल्डर",
+      "renamePlaceholder": "फ़ोल्डर का नाम",
+      "deleteConfirm": "इस फ़ोल्डर को हटाएँ?",
+      "empty": "यह फ़ोल्डर खाली है"
+    },
+    "file": {
+      "details": "फ़ाइल विवरण",
+      "download": "डाउनलोड",
+      "share": "शेयर",
+      "lock": "लॉक",
+      "unlock": "अनलॉक",
+      "move": "मूव",
+      "rename": "नाम बदलें",
+      "delete": "हटाएँ",
+      "copied": "लिंक कॉपी हो गया",
+      "processing": "प्रोसेसिंग...",
+      "completed": "पूर्ण",
+      "failed": "विफल",
+      "queued": "कतार में",
+      "uploaded": "अपलोड हो गई"
+    },
+    "search": {
+      "placeholder": "फ़ाइलें खोजें...",
+      "noResults": "कोई फ़ाइल नहीं मिली",
+      "hint": "अपनी फ़ाइलें खोजने के लिए टाइप करें"
+    },
+    "view": {
+      "grid": "ग्रिड व्यू",
+      "list": "लिस्ट व्यू"
+    },
+    "sort": {
+      "name": "नाम",
+      "date": "संशोधित तिथि",
+      "size": "आकार",
+      "type": "प्रकार"
+    },
+    "filter": {
+      "all": "सभी प्रकार",
+      "pdf": "PDF",
+      "docx": "Word",
+      "xlsx": "Excel",
+      "pptx": "PowerPoint",
+      "image": "चित्र"
+    },
+    "upload": {
+      "title": "दस्तावेज़ अपलोड करें",
+      "dragDrop": "फ़ाइलें यहाँ खींचें या ब्राउज़ करने के लिए क्लिक करें",
+      "uploading": "अपलोड हो रहा है...",
+      "pending": "लंबित",
+      "detecting": "पहचान हो रही है...",
+      "extracting": "निकाला जा रहा है...",
+      "classifying": "वर्गीकृत हो रहा है...",
+      "ready": "तैयार",
+      "failed": "विफल",
+      "maxSize": "50MB तक"
+    },
+    "share": {
+      "title": "शेयर",
+      "with": "के साथ शेयर करें",
+      "username": "उपयोगकर्ता नाम",
+      "permission": "अनुमति",
+      "viewOnly": "केवल देखें",
+      "viewDownload": "देखें + डाउनलोड",
+      "people": "पहुँच वाले लोग",
+      "manage": "प्रबंधित करें",
+      "send": "शेयर",
+      "sharing": "शेयर हो रहा है...",
+      "noShares": "अभी तक शेयर नहीं किया गया"
+    },
+    "lock": {
+      "title": "फ़ाइल लॉक करें",
+      "unlockTitle": "फ़ाइल अनलॉक करें",
+      "password": "पासवर्ड",
+      "confirmPassword": "पासवर्ड की पुष्टि करें",
+      "setPassword": "पासवर्ड सेट करें",
+      "enterPassword": "पासवर्ड दर्ज करें",
+      "lockBtn": "फ़ाइल लॉक करें",
+      "unlockBtn": "फ़ाइल अनलॉक करें",
+      "processing": "प्रोसेसिंग...",
+      "minLength": "पासवर्ड कम से कम 4 वर्णों का होना चाहिए",
+      "mismatch": "पासवर्ड मेल नहीं खाते",
+      "incorrect": "गलत पासवर्ड"
+    },
+    "move": {
+      "title": "मूव",
+      "select": "गंतव्य चुनें",
+      "root": "रूट (होम)",
+      "moveHere": "यहाँ मूव करें",
+      "moving": "मूव हो रहा है...",
+      "createFolder": "यहाँ फ़ोल्डर बनाएँ",
+      "newFolderName": "फ़ोल्डर का नाम",
+      "create": "बनाएँ",
+      "cancel": "रद्द करें",
+      "noFolders": "अभी तक कोई फ़ोल्डर नहीं"
+    },
+    "delete": {
+      "title": "हटाएँ",
+      "warning": "यह क्रिया पूर्ववत नहीं की जा सकती। फ़ाइल स्थायी रूप से हटा दी जाएगी।",
+      "deleteBtn": "हटाएँ",
+      "deleting": "हटाया जा रहा है...",
+      "cancel": "रद्द करें"
+    },
+    "settings": {
+      "title": "सेटिंग्स",
+      "profile": "प्रोफ़ाइल",
+      "security": "सुरक्षा",
+      "appearance": "रूप",
+      "language": "भाषा",
+      "account": "खाता",
+      "name": "नाम",
+      "email": "ईमेल",
+      "username": "उपयोगकर्ता नाम",
+      "currentPassword": "वर्तमान पासवर्ड",
+      "newPassword": "नया पासवर्ड",
+      "confirmPassword": "नए पासवर्ड की पुष्टि करें",
+      "updateProfile": "प्रोफ़ाइल अपडेट करें",
+      "changePassword": "पासवर्ड बदलें",
+      "saveChanges": "परिवर्तन सहेजें",
+      "saving": "सहेजा जा रहा है...",
+      "saved": "सहेजा गया",
+      "theme": "थीम",
+      "languageSelect": "भाषा",
+      "dangerZone": "खतरे का क्षेत्र",
+      "deleteAccount": "खाता हटाएँ",
+      "deleteWarning": "अपना खाता और सभी संबंधित फ़ाइलें स्थायी रूप से हटा दें। यह पूर्ववत नहीं किया जा सकता।",
+      "twoFactor": "दो-कारक प्रमाणीकरण"
+    },
+    "errors": {
+      "loadFailed": "फ़ाइलें लोड नहीं हो सकीं",
+      "uploadFailed": "अपलोड विफल",
+      "deleteFailed": "हटाना विफल",
+      "shareFailed": "शेयर विफल",
+      "moveFailed": "मूव विफल",
+      "lockFailed": "लॉक विफल",
+      "unlockFailed": "अनलॉक विफल",
+      "renameFailed": "नाम बदलना विफल"
+    }
+  },
+  "admin": {
+    "loginTitle": "DocumentVault एडमिन",
+    "loginSubtitle": "एडमिन कंट्रोल सेंटर में साइन इन करें",
+    "title": "एडमिन कंट्रोल सेंटर",
+    "subtitle": "आपके डॉक्यूमेंट प्लेटफ़ॉर्म की स्थिति",
+    "backToApp": "ऐप पर वापस",
+    "section": {
+      "main": "एडमिन",
+      "overview": "अवलोकन",
+      "users": "उपयोगकर्ता",
+      "documents": "दस्तावेज़",
+      "processing": "प्रोसेसिंग",
+      "sharing": "साझाकरण",
+      "storage": "स्टोरेज",
+      "security": "सुरक्षा",
+      "activity": "गतिविधि"
+    },
+    "kpi": {
+      "totalUsers": "कुल उपयोगकर्ता",
+      "totalDocuments": "कुल दस्तावेज़",
+      "storageUsed": "उपयोग किया गया स्टोरेज",
+      "totalJobs": "कुल जॉब्स",
+      "completed": "पूर्ण",
+      "failed": "विफल",
+      "active24h": "24 घंटे में सक्रिय",
+      "recentUploads": "हाल के अपलोड"
+    },
+    "view": "देखें",
+    "empty": "अभी तक कोई डेटा नहीं।",
+    "reports": "रिपोर्ट्स",
+    "reviewReport": "रिपोर्ट की समीक्षा",
+    "resolve": "समाधान करें",
+    "retry": "पुनः प्रयास",
+    "reason": {
+      "inappropriate": "अनुचित सामग्री",
+      "copyright": "कॉपीराइट उल्लंघन",
+      "spam": "स्पैम",
+      "malware": "मैलवेयर",
+      "other": "अन्य"
+    },
+    "health": {
+      "title": "सिस्टम स्वास्थ्य"
+    },
+    "pipeline": {
+      "title": "प्रोसेसिंग पाइपलाइन"
+    },
+    "attention": {
+      "title": "ध्यान आवश्यक"
+    },
+    "fileTypes": {
+      "title": "फ़ाइल प्रकार"
+    },
+    "activity": {
+      "title": "हाल की गतिविधि",
+      "empty": "कोई हालिया गतिविधि नहीं"
+    },
+    "jobs": {
+      "title": "बैकग्राउंड जॉब्स"
+    }
+  },
+  "community": {
+    "nav": "समुदाय",
+    "title": "समुदाय",
+    "browseRequests": "अनुरोध ब्राउज़ करें",
+    "myRequests": "मेरे अनुरोध",
+    "myOffers": "मेरे ऑफ़र",
+    "transfers": "ट्रांसफ़र",
+    "offer": "ऑफ़र करें",
+    "cancel": "रद्द करें",
+    "accept": "स्वीकार करें",
+    "decline": "अस्वीकार करें",
+    "withdraw": "वापस लें",
+    "markReceived": "प्राप्त चिह्नित करें",
+    "noRequests": "अभी कोई खुला अनुरोध नहीं है। पहले पूछने वाले बनें!",
+    "noOffers": "आपने अभी तक कोई ऑफ़र नहीं दिया है।",
+    "noTransfers": "अभी कोई ट्रांसफ़र नहीं है।",
+    "status": {
+      "open": "खुला",
+      "filled": "पूर्ण",
+      "cancelled": "रद्द",
+      "pending": "लंबित",
+      "accepted": "स्वीकृत",
+      "declined": "अस्वीकृत",
+      "withdrawn": "वापस लिया गया",
+      "received": "प्राप्त"
+    }
+  },
+  "visibility": {
+    "title": "दृश्यता",
+    "private": "निजी",
+    "password": "पासवर्ड सुरक्षित",
+    "public": "सार्वजनिक",
+    "setPassword": "पासवर्ड सेट करें",
+    "passwordPlaceholder": "पासवर्ड दर्ज करें",
+    "publicTitle": "सार्वजनिक शीर्षक",
+    "publicTitlePlaceholder": "सार्वजनिक सूची के लिए प्रदर्शन नाम"
+  },
+  "public": {
+    "download": "डाउनलोड",
+    "saveToWorkspace": "मेरे वर्कस्पेस में सहेजें",
+    "passwordRequired": "इस फ़ाइल के लिए पासवर्ड आवश्यक है",
+    "enterPassword": "पासवर्ड दर्ज करें"
+  }
+}

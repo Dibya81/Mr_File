@@ -1,0 +1,547 @@
+{
+  "nav": {
+    "product": "Product",
+    "howItWorks": "How it works",
+    "security": "Security",
+    "login": "Login",
+    "getStarted": "Get Started"
+  },
+  "hero": {
+    "title1": "Your documents.",
+    "title2": "Under control.",
+    "subtitle": "Store, understand, organize, protect, and share your files. The platform figures out what you upload — so you don't have to.",
+    "cta": "Get Started",
+    "secondary": "See how it works"
+  },
+  "problem": {
+    "title": "Files pile up faster than we can organize them.",
+    "subtitle": "Downloads, exports, drafts, shared files. Names like Document_v3_final_FINAL.pdf. Nobody knows what's inside until they open it.",
+    "beforeLabel": "Before",
+    "afterLabel": "After"
+  },
+  "trust": {
+    "title": "Trusted by 10,000+ teams worldwide",
+    "subtitle": "Enterprise-grade security used by",
+    "compliance": {
+      "soc": "SOC-2 Type II",
+      "encryption": "256-bit AES Encryption",
+      "gdpr": "GDPR Compliant"
+    }
+  },
+  "accessControl": {
+    "title": "Share access",
+    "publicLink": "Public link",
+    "publicLinkHint": "Anyone with the link can view",
+    "private": "Private",
+    "privateHint": "Only shared with specific users",
+    "shareWith": "Share with",
+    "permission": {
+      "label": "Permission level",
+      "view": "View only",
+      "viewHint": "Can read but not download",
+      "viewDownload": "View + Download",
+      "viewDownloadHint": "Can read and save a copy",
+      "viewDownloadPrint": "View + Download + Print",
+      "viewDownloadPrintHint": "Full access including printing"
+    },
+    "expires": "Expires",
+    "maxDownloads": "Max downloads",
+    "passcode": "Passcode (optional)",
+    "passcodePlaceholder": "Set a passcode",
+    "send": "Send invitation",
+    "copyLink": "Copy link",
+    "revoke": "Revoke"
+  },
+  "bento": {
+    "folders": { "title": "Nested Folders", "body": "Organize documents in a 3-level hierarchy. Drag and drop to move." },
+    "search": { "title": "AI Search", "body": "Full-text search across all your documents instantly." },
+    "tags": { "title": "Auto-Tagging", "body": "Documents are auto-classified with smart tags." },
+    "sort": { "title": "Smart Sort", "body": "Sort by any extracted field with one click." },
+    "counter": { "title": "Processed Today", "body": "Real-time counter of files AI has processed." }
+  },
+  "cta": {
+    "title": "Your documents have a place.",
+    "subtitle": "Create yours.",
+    "button": "Create your workspace",
+    "secondary": "Learn more",
+    "status": "All Systems Operational",
+    "ready": "Ready in 30 seconds",
+    "subscribed": "You're subscribed!"
+  },
+  "idea": {
+    "title": "What if your document manager understood the files itself?",
+    "subtitle": "No more guessing. The platform looks inside every file and figures out what it actually is."
+  },
+  "detection": {
+    "title": "It looks beyond the filename.",
+    "subtitle": "A file called report.pdf might not be a PDF at all. We check the actual content — not just the extension.",
+    "step1": "File uploaded",
+    "step2": "Content inspected",
+    "step3": "True type identified"
+  },
+  "processing": {
+    "title": "Upload. Detect. Extract. Classify.",
+    "subtitle": "Every document goes through a processing pipeline that understands it from the inside out.",
+    "upload": "Upload",
+    "detect": "Detect",
+    "extract": "Extract",
+    "classify": "Classify",
+    "store": "Store",
+    "tabs": {
+      "upload": "Upload",
+      "detect": "Detect",
+      "extract": "Extract",
+      "classify": "Classify"
+    },
+    "uploadStep": {
+      "title": "Drop files here to upload",
+      "hint": "PDF, DOCX, XLSX, images and more"
+    },
+    "detectStep": {
+      "inspecting": "Inspecting content…",
+      "magicBytes": "Magic bytes analysis",
+      "confirmed": "Confirmed: PDF"
+    },
+    "extractStep": {
+      "fieldsFound": "fields found"
+    },
+    "classifyStep": {
+      "autoClassified": "Auto-classified as",
+      "suggestedFolder": "Suggested folder"
+    }
+  },
+  "extraction": {
+    "title": "The file tells us what it is.",
+    "subtitle": "We pull out the information that matters — without you having to enter it manually.",
+    "pages": "Pages",
+    "author": "Author",
+    "created": "Created",
+    "words": "Words",
+    "category": "Category",
+    "status": "Status"
+  },
+  "organization": {
+    "title": "From files to a workspace.",
+    "subtitle": "Your documents stop being a pile and become an organized workspace. Folders, categories, search — everything in its place.",
+    "folders": "Folders",
+    "categories": "Categories",
+    "search": "Search",
+    "sort": "Sort",
+    "bento": {
+      "folders": { "title": "Nested Folders", "body": "Organize documents in a 3-level hierarchy. Drag and drop to move." },
+      "search": { "title": "AI Search", "body": "Full-text search across all your documents instantly." },
+      "tags": { "title": "Auto-Tagging", "body": "Documents are auto-classified with smart tags." },
+      "sort": { "title": "Smart Sort", "body": "Sort by any extracted field with one click." },
+      "counter": { "title": "Processed Today", "body": "Real-time counter of files AI has processed." }
+    }
+  },
+  "security": {
+    "title": "Keep private files private.",
+    "subtitle": "Lock individual files with a password. The protection is enforced on the server — not just the interface.",
+    "lock": "Lock",
+    "protect": "Protect",
+    "enforce": "Server-side enforcement"
+  },
+  "sharing": {
+    "title": "Share without losing control.",
+    "subtitle": "Send a file to someone by username. Choose what they can do — view or download. Revoke access anytime.",
+    "shareWith": "Share with",
+    "permission": "Permission",
+    "revoke": "Revoke access"
+  },
+  "product": {
+    "title": "Everything in one place.",
+    "subtitle": "Your dashboard. Your files. Your rules."
+  },
+  "footer": {
+    "description": "A secure document workspace for storing, organizing, processing and sharing your files.",
+    "product": "Product",
+    "resources": "Resources",
+    "legal": "Legal",
+    "company": "Company",
+    "documentation": "Documentation",
+    "apiReference": "API Reference",
+    "privacy": "Privacy Policy",
+    "terms": "Terms of Service",
+    "newsletter": {
+      "title": "Get product updates",
+      "placeholder": "you@company.com",
+      "button": "Subscribe"
+    },
+    "status": {
+      "operational": "All Systems Operational"
+    },
+    "column": {
+      "product": { "title": "Product", "items": ["Features", "Security", "Pricing", "Changelog"] },
+      "resources": { "title": "Resources", "items": ["Documentation", "API Reference", "Status"] },
+      "company": { "title": "Company", "items": ["About", "Blog", "Careers", "Contact"] },
+      "legal": { "title": "Legal", "items": ["Privacy Policy", "Terms of Service", "Cookie Policy"] }
+    }
+  },
+  "themes": {
+    "light": "Light",
+    "bright": "Bright",
+    "system": "System"
+  },
+  "languages": {
+    "en": "English",
+    "hi": "हिन्दी",
+    "kn": "ಕನ್ನಡ"
+  },
+  "workspace": {
+    "nav": {
+      "dashboard": "Dashboard",
+      "recent": "Recent",
+      "shared": "Shared",
+      "starred": "Starred",
+      "allFiles": "All Files",
+      "settings": "Settings",
+      "admin": "Admin",
+      "community": "Community"
+    },
+    "dashboard": {
+      "greeting": "Good {{timeOfDay}}",
+      "subtitle": "Here's what's on your workspace.",
+      "quickActions": "Quick actions",
+      "uploadFiles": "Upload files",
+      "newFolder": "New folder",
+      "recentFiles": "Recent files",
+      "storage": "Storage used",
+      "viewAll": "View all",
+      "emptyTitle": "Your workspace is empty",
+      "emptySubtitle": "Upload your first document to get started.",
+      "noRecent": "No recent files",
+      "noStarred": "No starred files",
+      "processingCount": "{{count}} processing",
+      "readyTitle": "Your workspace is ready",
+      "dropZoneTitle": "Drag & drop files here",
+      "dropZoneActive": "Drop to upload",
+      "dropZoneHint": "or click to browse · PDF, DOCX, XLSX, PNG, JPG up to 50MB",
+      "browseFiles": "Browse files",
+      "createFolderHint": "or create a folder to organize",
+      "files_one": "{{count}} file",
+      "files_other": "{{count}} files",
+      "recentSubtitle": "Files you've recently uploaded or modified, sorted by most recent first.",
+      "starredSubtitle": "Files you've marked as important. Click the star on any file to add or remove it.",
+      "stat_totalFiles": "Total files",
+      "stat_storage": "Storage used",
+      "stat_aiProcessed": "AI processed",
+      "stat_starred": "Starred",
+      "allFiles": "All files"
+    },
+    "folder": {
+      "allFiles": "All Files",
+      "root": "Home",
+      "newFolderName": "New folder",
+      "renamePlaceholder": "Folder name",
+      "deleteConfirm": "Delete this folder?",
+      "empty": "This folder is empty"
+    },
+    "file": {
+      "details": "File details",
+      "download": "Download",
+      "share": "Share",
+      "lock": "Lock",
+      "unlock": "Unlock",
+      "move": "Move",
+      "rename": "Rename",
+      "delete": "Delete",
+      "copied": "Link copied",
+      "processing": "Processing...",
+      "completed": "Completed",
+      "failed": "Failed",
+      "queued": "Queued",
+      "uploaded": "Uploaded"
+    },
+    "search": {
+      "placeholder": "Search files...",
+      "noResults": "No files found",
+      "hint": "Type to search your files"
+    },
+    "view": {
+      "grid": "Grid view",
+      "list": "List view"
+    },
+    "sort": {
+      "name": "Name",
+      "date": "Date modified",
+      "size": "Size",
+      "type": "Type"
+    },
+    "filter": {
+      "all": "All types",
+      "pdf": "PDF",
+      "docx": "Word",
+      "xlsx": "Excel",
+      "pptx": "PowerPoint",
+      "image": "Images"
+    },
+    "upload": {
+      "title": "Upload Documents",
+      "dragDrop": "Drag & drop files here, or click to browse",
+      "uploading": "Uploading...",
+      "pending": "Pending",
+      "detecting": "Detecting...",
+      "extracting": "Extracting...",
+      "classifying": "Classifying...",
+      "ready": "Ready",
+      "failed": "Failed",
+      "maxSize": "up to 50MB"
+    },
+    "share": {
+      "title": "Share",
+      "with": "Share with",
+      "username": "username",
+      "permission": "Permission",
+      "viewOnly": "View only",
+      "viewDownload": "View + Download",
+      "people": "People with access",
+      "manage": "Manage",
+      "send": "Share",
+      "sharing": "Sharing...",
+      "noShares": "Not shared yet"
+    },
+    "lock": {
+      "title": "Lock File",
+      "unlockTitle": "Unlock File",
+      "password": "Password",
+      "confirmPassword": "Confirm password",
+      "setPassword": "Set a password",
+      "enterPassword": "Enter the password",
+      "lockBtn": "Lock File",
+      "unlockBtn": "Unlock File",
+      "processing": "Processing...",
+      "minLength": "Password must be at least 4 characters",
+      "mismatch": "Passwords do not match",
+      "incorrect": "Incorrect password"
+    },
+    "move": {
+      "title": "Move",
+      "select": "Select destination",
+      "root": "Root (Home)",
+      "moveHere": "Move Here",
+      "moving": "Moving...",
+      "createFolder": "Create folder here",
+      "newFolderName": "Folder name",
+      "create": "Create",
+      "cancel": "Cancel",
+      "noFolders": "No folders yet"
+    },
+    "delete": {
+      "title": "Delete",
+      "warning": "This action cannot be undone. The file will be permanently removed.",
+      "deleteBtn": "Delete",
+      "deleting": "Deleting...",
+      "cancel": "Cancel"
+    },
+    "settings": {
+      "title": "Settings",
+      "profile": "Profile",
+      "security": "Security",
+      "appearance": "Appearance",
+      "language": "Language",
+      "account": "Account",
+      "name": "Name",
+      "email": "Email",
+      "username": "Username",
+      "currentPassword": "Current password",
+      "newPassword": "New password",
+      "confirmPassword": "Confirm new password",
+      "updateProfile": "Update Profile",
+      "changePassword": "Change Password",
+      "saveChanges": "Save changes",
+      "saving": "Saving...",
+      "saved": "Saved",
+      "theme": "Theme",
+      "languageSelect": "Language",
+      "dangerZone": "Danger zone",
+      "deleteAccount": "Delete account",
+      "deleteWarning": "Permanently delete your account and all associated files. This cannot be undone.",
+      "twoFactor": "Two-factor authentication"
+    },
+    "errors": {
+      "loadFailed": "Couldn't load files",
+      "uploadFailed": "Upload failed",
+      "deleteFailed": "Delete failed",
+      "shareFailed": "Share failed",
+      "moveFailed": "Move failed",
+      "lockFailed": "Lock failed",
+      "unlockFailed": "Unlock failed",
+      "renameFailed": "Rename failed"
+    }
+  },
+  "admin": {
+    "loginTitle": "DocumentVault Admin",
+    "loginSubtitle": "Sign in to the admin control center",
+    "title": "Admin Control Center",
+    "subtitle": "Here's what's happening across your document workspace.",
+    "backToApp": "Back to app",
+    "section": {
+      "main": "Admin",
+      "overview": "Overview",
+      "users": "Users",
+      "documents": "Documents",
+      "processing": "Processing",
+      "sharing": "Sharing",
+      "storage": "Storage",
+      "security": "Security",
+      "activity": "Activity"
+    },
+    "kpi": {
+      "totalUsers": "Total Users",
+      "totalDocuments": "Total Documents",
+      "storageUsed": "Storage Used",
+      "totalJobs": "Total Jobs",
+      "completed": "Completed",
+      "failed": "Failed",
+      "active24h": "Active 24h",
+      "recentUploads": "Recent Uploads"
+    },
+    "view": "View",
+    "empty": "No data available yet.",
+    "reports": "Reports",
+    "reviewReport": "Review Report",
+    "resolve": "Resolve",
+    "retry": "Retry",
+    "reason": {
+      "inappropriate": "Inappropriate Content",
+      "copyright": "Copyright Violation",
+      "spam": "Spam",
+      "malware": "Malware",
+      "other": "Other"
+    },
+    "health": {
+      "title": "System Health"
+    },
+    "pipeline": {
+      "title": "Processing Pipeline"
+    },
+    "attention": {
+      "title": "Needs Attention"
+    },
+    "fileTypes": {
+      "title": "File Types"
+    },
+    "activity": {
+      "title": "Recent Activity",
+      "empty": "No recent activity"
+    },
+    "jobs": {
+      "title": "Background Jobs"
+    },
+    "refresh": "Refresh",
+    "filters": "Filters",
+    "all": "All",
+    "error": {
+      "generic": "Something went wrong",
+      "loadFailed": "Failed to load {{resource}}",
+      "retry": "Retry"
+    },
+    "users": {
+      "search": "Search users",
+      "noUsers": "No users found"
+    },
+    "documents": {
+      "search": "Search documents",
+      "details": "Document",
+      "owner": "Owner",
+      "size": "Size",
+      "type": "Type",
+      "noDocuments": "No documents found"
+    },
+    "processing": {
+      "search": "Search jobs",
+      "noJobs": "No processing jobs"
+    },
+    "sharing": {
+      "search": "Search by filename",
+      "sharedWith": "Search by username or filename",
+      "file": "File",
+      "owner": "Owner",
+      "sharedBy": "Shared By",
+      "sharedTo": "Shared With",
+      "permission": "Permission",
+      "status": "Status",
+      "active": "Active",
+      "revoked": "Revoked",
+      "noShares": "No shares yet",
+      "view": "View only",
+      "download": "View + Download"
+    },
+    "storage": {
+      "title": "Storage Overview",
+      "totalUsed": "Total Used",
+      "files": "Files",
+      "avgSize": "Average File Size",
+      "byType": "By File Type",
+      "byUser": "Top Users",
+      "largest": "Largest Files"
+    },
+    "security": {
+      "title": "Security Events",
+      "event": "Event",
+      "user": "User",
+      "ip": "IP Address",
+      "detail": "Detail",
+      "severity": "Severity",
+      "noEvents": "No security events",
+      "types": {
+        "login_failed": "Failed login",
+        "login_success": "Successful login",
+        "upload_rejected": "Upload rejected",
+        "unsupported_file": "Unsupported file",
+        "authorization_failed": "Authorization failed",
+        "password_protected_access": "Password access",
+        "share_created": "Share created",
+        "share_revoked": "Share revoked",
+        "admin_action": "Admin action"
+      }
+    },
+    "activityFeed": {
+      "noActivity": "No recent activity"
+    }
+  },
+  "community": {
+    "nav": "Community",
+    "title": "Community",
+    "browseRequests": "Browse Requests",
+    "myRequests": "My Requests",
+    "myOffers": "My Offers",
+    "transfers": "Transfers",
+    "offer": "Make Offer",
+    "cancel": "Cancel",
+    "accept": "Accept",
+    "decline": "Decline",
+    "withdraw": "Withdraw",
+    "markReceived": "Mark Received",
+    "noRequests": "No open requests yet. Be the first to ask!",
+    "noOffers": "You haven't made any offers yet.",
+    "noTransfers": "No transfers yet.",
+    "status": {
+      "open": "Open",
+      "filled": "Filled",
+      "cancelled": "Cancelled",
+      "pending": "Pending",
+      "accepted": "Accepted",
+      "declined": "Declined",
+      "withdrawn": "Withdrawn",
+      "received": "Received"
+    }
+  },
+  "visibility": {
+    "title": "Visibility",
+    "private": "Private",
+    "password": "Password Protected",
+    "public": "Public",
+    "setPassword": "Set Password",
+    "passwordPlaceholder": "Enter password",
+    "publicTitle": "Public Title",
+    "publicTitlePlaceholder": "Display name for public listing"
+  },
+  "public": {
+    "download": "Download",
+    "saveToWorkspace": "Save to My Workspace",
+    "passwordRequired": "This file requires a password",
+    "enterPassword": "Enter password"
+  }
+}
