@@ -290,7 +290,7 @@ UPDATE users SET role = 'admin' WHERE username = 'YOUR_USERNAME';
 ## Security
 
 - **Passwords**: bcrypt-hashed (passlib), never returned in API responses
-- **JWT cookies**: HttpOnly, SameSite=lax, Secure (in production)
+- **JWT cookies**: HttpOnly, `SameSite=None; Secure` in production (required for cross-origin deployments like Vercel → Render), `SameSite=Lax` for same-origin
 - **Backend enforces all authorization** — frontend restrictions are UX only
 - **Public files** served via 15-minute signed URLs; bucket itself is private
 - **Password-protected public files**: bcrypt verification at download time
@@ -299,6 +299,10 @@ UPDATE users SET role = 'admin' WHERE username = 'YOUR_USERNAME';
 - **No secrets in frontend** — only anon key (Supabase service-role is backend-only)
 
 ## Deployment
+
+### Live demo
+- Frontend: `https://mr-file.vercel.app`
+- Backend: `https://mr-file.onrender.com`
 
 ### Frontend
 Build static files and serve with any static host (Vercel, Netlify, nginx, etc.):
@@ -318,14 +322,26 @@ server {
 **Option B — Separate hosting (use env var):**
 ```bash
 # In frontend/.env.production:
-VITE_API_BASE_URL=https://api.example.com
+VITE_API_BASE_URL=https://api.example.com/api
 npm run build
 # Serve dist/ on your host
 ```
 
-### Backend
-Use a process manager like `systemd` or `supervisord`:
+**Vercel specifics:**
+- Framework preset: Vite
+- `vercel.json` is included with SPA rewrites (any non-asset, non-api path falls through to `index.html`)
+- Set `VITE_API_BASE_URL=https://YOUR_BACKEND/api` in Vercel project settings
 
+### Backend
+Use a process manager like `systemd` or `supervisord`, or deploy to Render/Railway/Fly:
+
+**Render Web Service:**
+- Build command: `pip install -r requirements.txt`
+- Start command: `uvicorn app.main:app --host 0.0.0.0 --port $PORT`
+- Set all env vars from the table above in the Render dashboard
+- `CORS_ORIGINS` must include your frontend URL (e.g. `["https://your-app.vercel.app"]`)
+
+**systemd example:**
 ```ini
 [program:documentvault]
 command=/var/www/documentvault/backend/venv/bin/uvicorn app.main:app --host 127.0.0.1 --port 8001
@@ -335,7 +351,7 @@ autorestart=true
 environment=ENV=production
 ```
 
-Always run behind HTTPS (Caddy, nginx, Cloudflare).
+Always run behind HTTPS (Caddy, nginx, Cloudflare, Render-managed certs).
 
 ## Troubleshooting
 
@@ -359,11 +375,11 @@ Always run behind HTTPS (Caddy, nginx, Cloudflare).
 1. Run the SQL migration in Supabase SQL editor (`backend/migrations/001_public_community.sql`)
 2. Create the `documents` storage bucket (private)
 3. Promote at least one user to `admin` role via SQL
-4. Generate a strong `JWT_SECRET` (≥32 random bytes)
-5. Configure `CORS_ORIGINS` with your production frontend domain(s)
-6. For separately hosted frontend: set `VITE_API_BASE_URL` to your production backend URL
-7. Set `Secure` flag on the session cookie (handled automatically with HTTPS)
-8. Set up HTTPS (Caddy/Certbot/Cloudflare)
+4. Generate a strong `JWT_SECRET`: `python -c "import secrets; print(secrets.token_urlsafe(48))"`
+5. Configure `CORS_ORIGINS` with your production frontend domain(s) (JSON array)
+6. For separately hosted frontend: set `VITE_API_BASE_URL=https://YOUR_BACKEND/api` (include the `/api` suffix — backend routes are mounted there)
+7. Cookies use `SameSite=None; Secure` for cross-origin (Vercel→Render). The backend sets this automatically when `ENV=production` and the request is HTTPS
+8. Set up HTTPS (Caddy/Certbot/Cloudflare/Render-managed certs)
 9. Configure backups for PostgreSQL (Supabase automatic backups suffice for most cases)
 
 ## Project Structure

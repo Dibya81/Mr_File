@@ -35,7 +35,7 @@ export default function HeroSection() {
 
       <div className="relative max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 w-full">
         <div className="grid lg:grid-cols-[1.05fr_0.95fr] gap-8 lg:gap-10 items-center">
-          <div>
+          <div className="min-w-0">
             <motion.div
               initial={{ opacity: 0, y: 12 }}
               animate={{ opacity: 1, y: 0 }}
@@ -108,7 +108,7 @@ export default function HeroSection() {
             className="relative w-full max-w-full"
           >
             <div
-              className="relative will-change-transform rounded-2xl border border-gray-200 dark:border-white/10 shadow-2xl dark:shadow-blue-500/10 overflow-visible"
+              className="relative will-change-transform rounded-2xl border border-gray-200 dark:border-white/10 shadow-2xl dark:shadow-blue-500/10 max-w-full overflow-hidden lg:overflow-visible"
               style={{
                 transform: `perspective(2000px) rotateY(${tilt.x * 1.2}deg) rotateX(${
                   -tilt.y * 1.2
@@ -124,7 +124,7 @@ export default function HeroSection() {
               <motion.div
                 animate={{ y: [0, -5, 0] }}
                 transition={{ duration: 4, repeat: Infinity, ease: 'easeInOut' }}
-                className="absolute -top-3 -left-3 glass rounded-xl px-3 py-2 shadow-2xl shadow-blue-500/20 flex items-center gap-2 z-10"
+                className="absolute -top-3 -left-3 glass rounded-xl px-3 py-2 shadow-2xl shadow-blue-500/20 items-center gap-2 z-10 hidden md:flex"
               >
                 <div className="w-7 h-7 rounded-lg bg-emerald-500/20 flex items-center justify-center">
                   <CheckCircle2 size={14} className="text-emerald-500" />
@@ -143,7 +143,7 @@ export default function HeroSection() {
               <motion.div
                 animate={{ y: [0, -6, 0] }}
                 transition={{ duration: 5, repeat: Infinity, ease: 'easeInOut', delay: 0.8 }}
-                className="absolute -bottom-3 -right-3 glass rounded-xl px-3 py-2 shadow-2xl shadow-blue-500/20 flex items-center gap-2 z-10"
+                className="absolute -bottom-3 -right-3 glass rounded-xl px-3 py-2 shadow-2xl shadow-blue-500/20 items-center gap-2 z-10 hidden md:flex"
               >
                 <div className="w-7 h-7 rounded-lg bg-blue-500/20 flex items-center justify-center">
                   <Zap size={14} className="text-blue-500" />

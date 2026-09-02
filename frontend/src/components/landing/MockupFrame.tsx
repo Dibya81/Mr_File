@@ -45,7 +45,7 @@ export default function MockupFrame({
         >
           <div
             className={cn(
-              'px-3 py-0.5 rounded-md text-xs font-mono',
+              'px-3 py-0.5 rounded-md text-xs font-mono truncate max-w-[180px]',
               light
                 ? 'bg-gray-200'
                 : 'bg-[#2a2d3e]'

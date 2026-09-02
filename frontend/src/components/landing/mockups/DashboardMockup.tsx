@@ -66,8 +66,8 @@ export default function DashboardMockup({ className = '' }: DashboardMockupProps
           <div className="w-3 h-3 rounded-full bg-yellow-400" />
           <div className="w-3 h-3 rounded-full bg-green-400" />
         </div>
-        <div className="flex-1 flex justify-center">
-          <div className="bg-white dark:bg-gray-700 rounded-md px-3 py-1 text-xs text-gray-400 font-mono w-64">
+        <div className="flex-1 flex justify-center min-w-0">
+          <div className="bg-white dark:bg-gray-700 rounded-md px-3 py-1 text-xs text-gray-400 font-mono w-full max-w-[180px] truncate">
             app.mydocuments.io/documents
           </div>
         </div>
