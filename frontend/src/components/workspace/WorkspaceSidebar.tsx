@@ -110,7 +110,9 @@ export default function WorkspaceSidebar({ currentFolderId, onClose, isMobile }:
   return (
     <aside
       className={cn(
-        'hidden lg:flex flex-col h-full w-64 border-r shrink-0',
+        isMobile
+          ? 'flex flex-col h-full w-full border-r-0'
+          : 'hidden lg:flex flex-col h-full w-64 border-r shrink-0',
         'transition-colors duration-200',
         sidebarBaseClasses
       )}
