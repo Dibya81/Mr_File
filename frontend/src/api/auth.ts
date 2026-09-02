@@ -1,4 +1,4 @@
-import api from './client';
+import api, { tokenStorage } from './client';
 import type { ApiResponse, User } from '../types';
 
 export const authApi = {
@@ -9,16 +9,23 @@ export const authApi = {
     password: string;
     confirm_password: string;
   }) => {
-    const res = await api.post<ApiResponse<User>>('/auth/signup', data);
+    const res = await api.post<ApiResponse<User & { token?: string }>>('/auth/signup', data);
+    if (res.data?.data?.token) {
+      tokenStorage.set(res.data.data.token);
+    }
     return res.data;
   },
 
   login: async (data: { identifier: string; password: string }) => {
-    const res = await api.post<ApiResponse<User>>('/auth/login', data);
+    const res = await api.post<ApiResponse<User & { token?: string }>>('/auth/login', data);
+    if (res.data?.data?.token) {
+      tokenStorage.set(res.data.data.token);
+    }
     return res.data;
   },
 
   logout: async () => {
+    tokenStorage.clear();
     const res = await api.post<ApiResponse<null>>('/auth/logout');
     return res.data;
   },

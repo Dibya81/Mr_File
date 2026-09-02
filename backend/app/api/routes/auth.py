@@ -37,6 +37,7 @@ async def signup(request: Request, db: Session = Depends(get_db)):
             "email": result["user"].email,
             "role": result["user"].role,
             "created_at": result["user"].created_at.isoformat() if result["user"].created_at else "",
+            "token": result["token"],
         },
         "message": "Account created",
     })
@@ -66,6 +67,7 @@ async def login(request: Request, db: Session = Depends(get_db)):
             "email": result["user"].email,
             "role": result["user"].role,
             "created_at": result["user"].created_at.isoformat() if result["user"].created_at else "",
+            "token": result["token"],
         },
         "message": "Logged in",
     })

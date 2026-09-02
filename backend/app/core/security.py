@@ -67,7 +67,13 @@ def get_token_from_cookie(request: Request) -> Optional[str]:
 
 
 async def get_current_user(request: Request) -> dict:
-    token = get_token_from_cookie(request)
+    # Try Authorization header first (for cross-domain setups where cookies don't work)
+    auth_header = request.headers.get("Authorization", "")
+    if auth_header.startswith("Bearer "):
+        token = auth_header[7:]
+    else:
+        token = get_token_from_cookie(request)
+
     if not token:
         raise HTTPException(
             status_code=status.HTTP_401_UNAUTHORIZED,
