@@ -4,6 +4,7 @@ import { useMutation, useQuery } from '@tanstack/react-query';
 import { authApi } from '../api/auth';
 import { useAuthStore } from '../store/authStore';
 import { Eye, EyeOff, Check, X } from 'lucide-react';
+import AuthHeaderControls from '../components/auth/AuthHeaderControls';
 
 export default function SignupPage() {
   const navigate = useNavigate();
@@ -54,7 +55,10 @@ export default function SignupPage() {
   const usernameSameAsName = form.username.toLowerCase() === form.name.toLowerCase() && form.username.length > 0;
 
   return (
-    <div className="min-h-screen flex items-center justify-center bg-gray-50 px-4">
+    <div className="min-h-screen flex items-center justify-center bg-gray-50 dark:bg-[#090D16] px-4">
+      <div className="absolute top-4 right-4">
+        <AuthHeaderControls variant="light" />
+      </div>
       <div className="w-full max-w-md">
         <div className="text-center mb-8">
           <Link to="/" className="text-2xl font-bold text-primary-600">DocumentVault</Link>

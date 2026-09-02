@@ -5,6 +5,7 @@ import { motion } from 'framer-motion';
 import { Shield, Eye, EyeOff, ArrowLeft, Lock, AlertTriangle } from 'lucide-react';
 import { authApi } from '@/api/auth';
 import { useAuthStore } from '@/store/authStore';
+import AuthHeaderControls from '@/components/auth/AuthHeaderControls';
 
 export default function AdminLoginPage() {
   const navigate = useNavigate();
@@ -71,9 +72,12 @@ export default function AdminLoginPage() {
           <ArrowLeft size={13} />
           Back to site
         </Link>
-        <div className="flex items-center gap-1.5 text-[10px] uppercase tracking-widest text-slate-400">
-          <Lock size={11} />
-          Restricted area
+        <div className="flex items-center gap-4">
+          <AuthHeaderControls variant="dark" />
+          <div className="hidden sm:flex items-center gap-1.5 text-[10px] uppercase tracking-widest text-slate-400">
+            <Lock size={11} />
+            Restricted area
+          </div>
         </div>
       </div>
 
