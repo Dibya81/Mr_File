@@ -63,6 +63,8 @@ DocumentVault lets users upload PDF/DOCX/XLSX/PPTX files, automatically extracts
 
 ## Architecture
 
+![System Architecture Diagram](docs/architecture.png)
+
 ```
 Browser → Frontend (React SPA) → Backend (FastAPI) → PostgreSQL + Supabase Storage
 ```
