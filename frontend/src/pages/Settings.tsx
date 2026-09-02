@@ -70,10 +70,10 @@ export default function Settings() {
 
   return (
     <WorkspaceLayout>
-      <div className="flex flex-col min-h-full">
+      <div className="flex flex-col h-full">
         <WorkspaceHeader title={t('workspace.settings.title')} />
 
-        <div className="flex flex-1 overflow-hidden">
+        <div className="flex flex-1 min-h-0">
           {/* Sidebar tabs */}
           <aside className={cn(
             'hidden md:flex flex-col w-48 shrink-0 border-r py-6 px-3 gap-1',

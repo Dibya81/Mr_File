@@ -51,7 +51,7 @@ export default function MockupFrame({
                 : 'bg-[#2a2d3e]'
             )}
           >
-            app.documentvault.io/library
+            app.mydocuments.io/library
           </div>
         </div>
 

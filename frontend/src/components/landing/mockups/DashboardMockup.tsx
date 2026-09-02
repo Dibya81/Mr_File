@@ -68,7 +68,7 @@ export default function DashboardMockup({ className = '' }: DashboardMockupProps
         </div>
         <div className="flex-1 flex justify-center">
           <div className="bg-white dark:bg-gray-700 rounded-md px-3 py-1 text-xs text-gray-400 font-mono w-64">
-            app.documentvault.io/documents
+            app.mydocuments.io/documents
           </div>
         </div>
         <div className="w-16" />
@@ -84,7 +84,7 @@ export default function DashboardMockup({ className = '' }: DashboardMockupProps
               <div className="w-7 h-7 bg-primary-500 rounded-lg flex items-center justify-center">
                 <FileText className="w-4 h-4 text-white" />
               </div>
-              <span className="text-white text-sm font-semibold">DocVault</span>
+              <span className="text-white text-sm font-semibold">DocumentVault</span>
             </div>
           </div>
 

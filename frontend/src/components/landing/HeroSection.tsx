@@ -64,7 +64,7 @@ export default function HeroSection() {
               initial={{ opacity: 0, y: 16 }}
               animate={{ opacity: 1, y: 0 }}
               transition={{ duration: 0.6, delay: 0.15 }}
-              className="mt-6 text-lg sm:text-xl text-gray-600 dark:text-slate-400 max-w-xl leading-relaxed"
+              className="mt-6 text-lg sm:text-xl text-gray-600 dark:text-slate-400 max-w-xl leading-relaxed break-words"
             >
               {t('hero.subtitle')}
             </motion.p>
