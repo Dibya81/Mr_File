@@ -57,7 +57,7 @@ const TypeBadge = ({ type }: { type: string }) => {
 export default function DashboardMockup({ className = '' }: DashboardMockupProps) {
   return (
     <div
-      className={`bg-white dark:bg-gray-900 rounded-2xl shadow-2xl shadow-gray-200/50 dark:shadow-gray-950/50 border border-gray-200 dark:border-gray-800 overflow-hidden flex flex-col h-[480px] w-full ${className}`}
+      className={`bg-white dark:bg-gray-900 rounded-2xl shadow-2xl shadow-gray-200/50 dark:shadow-gray-950/50 border border-gray-200 dark:border-gray-800 overflow-hidden flex flex-col h-[360px] sm:h-[420px] lg:h-[480px] w-full ${className}`}
     >
       {/* Browser chrome */}
       <div className="flex items-center gap-2 px-4 py-3 bg-gray-50 dark:bg-gray-800 border-b border-gray-200 dark:border-gray-700">

@@ -27,15 +27,15 @@ export default function HeroSection() {
   return (
     <section
       ref={sectionRef}
-      className="relative min-h-screen flex items-center overflow-hidden pt-32 pb-24"
+      className="relative min-h-screen flex items-center overflow-x-hidden pt-32 pb-24"
     >
       <div className="absolute inset-0 bg-gray-50 dark:bg-deep -z-10" />
       <div className="absolute inset-0 grid-bg dark:grid-bg -z-10" />
       <GlowBackground variant="blue" className="top-20 right-0" />
 
-      <div className="relative max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 w-full">
+      <div className="relative max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 w-full overflow-hidden">
         <div className="grid lg:grid-cols-[1.05fr_0.95fr] gap-8 lg:gap-10 items-center">
-          <div className="min-w-0">
+          <div className="min-w-0 w-full">
             <motion.div
               initial={{ opacity: 0, y: 12 }}
               animate={{ opacity: 1, y: 0 }}
@@ -73,20 +73,22 @@ export default function HeroSection() {
               initial={{ opacity: 0, y: 16 }}
               animate={{ opacity: 1, y: 0 }}
               transition={{ duration: 0.6, delay: 0.25 }}
-              className="mt-9 flex flex-col sm:flex-row gap-3 sm:gap-4"
+              className="mt-9 flex flex-col sm:flex-row gap-3 sm:gap-4 w-full sm:w-auto"
             >
               <Link
                 to="/signup"
-                className="shine-button inline-flex items-center justify-center gap-2 px-6 py-3.5 bg-gray-900 dark:bg-white text-white dark:text-gray-900 font-medium rounded-xl hover:bg-gray-800 dark:hover:bg-gray-100 transition shadow-glow-md"
+                className="shine-button w-full sm:w-auto inline-flex items-center justify-center gap-2 px-5 py-3 sm:px-6 sm:py-3.5 bg-gray-900 dark:bg-white text-white dark:text-gray-900 font-medium rounded-xl hover:bg-gray-800 dark:hover:bg-gray-100 transition shadow-glow-md text-sm sm:text-base"
               >
                 {t('hero.cta')}
-                <ArrowRight size={18} />
+                <ArrowRight size={16} className="sm:hidden" />
+                <ArrowRight size={18} className="hidden sm:block" />
               </Link>
               <a
                 href="#how-it-works"
-                className="inline-flex items-center justify-center gap-2 px-6 py-3.5 border border-gray-300 dark:border-white/15 bg-white/60 dark:bg-white/5 text-gray-700 dark:text-slate-200 font-medium rounded-xl hover:bg-white dark:hover:bg-white/10 transition backdrop-blur"
+                className="w-full sm:w-auto inline-flex items-center justify-center gap-2 px-5 py-3 sm:px-6 sm:py-3.5 border border-gray-300 dark:border-white/15 bg-white/60 dark:bg-white/5 text-gray-700 dark:text-slate-200 font-medium rounded-xl hover:bg-white dark:hover:bg-white/10 transition backdrop-blur text-sm sm:text-base"
               >
-                <Play size={14} />
+                <Play size={12} className="sm:hidden" />
+                <Play size={14} className="hidden sm:block" />
                 {t('hero.secondary')}
               </a>
             </motion.div>
@@ -105,10 +107,10 @@ export default function HeroSection() {
             initial={{ opacity: 0, y: 24 }}
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.8, delay: 0.2, ease: 'easeOut' }}
-            className="relative w-full max-w-full"
+            className="relative w-full max-w-full mx-auto lg:mx-0 overflow-hidden"
           >
             <div
-              className="relative will-change-transform rounded-2xl border border-gray-200 dark:border-white/10 shadow-2xl dark:shadow-blue-500/10 max-w-full overflow-hidden lg:overflow-visible"
+              className="relative will-change-transform rounded-2xl border border-gray-200 dark:border-white/10 shadow-2xl dark:shadow-blue-500/10 w-full max-w-[420px] sm:max-w-[520px] lg:max-w-none mx-auto overflow-hidden lg:overflow-visible"
               style={{
                 transform: `perspective(2000px) rotateY(${tilt.x * 1.2}deg) rotateX(${
                   -tilt.y * 1.2
