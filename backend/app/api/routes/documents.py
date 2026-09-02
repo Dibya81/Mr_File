@@ -541,7 +541,7 @@ async def unlock_document(
         raise ForbiddenError("Incorrect password")
 
     doc.is_locked = False
-    doc.password_hash = None
+    # Keep password_hash so owner can re-lock later with the same password.
     db.commit()
 
     return {"success": True, "message": "File unlocked"}
